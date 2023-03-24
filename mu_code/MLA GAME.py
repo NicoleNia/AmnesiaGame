@@ -1,11 +1,15 @@
-# Write your code here :-)
+import pygame
+
 TITLE = "MLA"
 HEIGHT = 575
 WIDTH = 1000
 state = "start"
+gui_font = pygame.font.Font(None, 30)
+
+
 
 def draw():
-    screen.blit("mlsbackg.png", (0,0))
+    screen.blit("mlsbackg.png", (0, 0))
 
     if state == "start":
         screen.draw.text(
