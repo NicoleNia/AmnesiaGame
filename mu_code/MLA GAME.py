@@ -1,12 +1,11 @@
 # Write your code here :-)
 TITLE = "MLA"
+HEIGHT = 575
 WIDTH = 1000
-HEIGHT = 500
 state = "start"
 
-
 def draw():
-    screen.blit("mlsbackg.png", (0, 0))
+    screen.blit("mlsbackg.png", (0,0))
 
     if state == "start":
         screen.draw.text(
@@ -26,3 +25,4 @@ def draw():
             ocolor="blue",
             fontsize=30,
         )
+
