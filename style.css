@@ -41,7 +41,7 @@
         }
         
   <!-- Responsive link -->  
-        .topnav .icon {
+        .topnav a.icon {
         display: none;
         }
         
