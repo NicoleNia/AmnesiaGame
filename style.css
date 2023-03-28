@@ -5,13 +5,13 @@
         }
 
   <!-- Background color -->  
-        .topnav {
+        #topnav {
             overflow: hidden;
             background-color: #111111;
         }
         
   <!-- Link styles -->  
-        .topnav a {
+        #topnav a {
             float: left;
             display: block;
             color: #f2f2f2;
@@ -22,26 +22,26 @@
         }
         
   <!-- Hover styles -->  
-        .topnav a:hover {
+        #topnav a:hover {
             background-color: #ddd;
             color: black;
         }
         
   <!-- Active styles (the page you're on) -->  
-        .topnav .active {
+        #topnav .active {
             background-color: #04AA6D;
             color: white;
         }
         
   <!-- Split style -->  
-        .topnav a.split {
+        #topnav a.split {
             float: right;
             background-color: #04AA6D;
             color: white;
         }
         
   <!-- Responsive link -->  
-        .topnav a.icon {
+        #topnav a.icon {
         display: none;
         }
         
