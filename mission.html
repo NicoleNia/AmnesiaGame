@@ -21,38 +21,33 @@
             text-align: center;
             width: 100%;
         }
-        
         #topNav li {
             display: inline;
         }
    <!-- Link styles -->  
         #topNav a {
             color: #f2f2f2;
-            display: inline-block;
             height: 60px;
             line-height: 60px;
             margin: 0px;
-            padding: 14px 16px;
+            padding: 0px 15px;
             text-decoration: none;
             font-size: 17px;
         }
-        
   <!-- Hover styles -->  
         #topNav a:hover {
-            color: black;
+            color: #111111;
         }
-
   <!-- Active styles (the page you're on) -->  
         #topNav a.active {
             background-color: #04AA6D;
-            color: white;
+            color: #FFFFFF;
         }
-        
   <!-- Split style -->  
         #topNav a.split {
             float: right;
             background-color: #04AA6D;
-            color: white;
+            color: #FFFFFF;
         }
         
   <!-- Responsive link -->  
@@ -66,10 +61,10 @@
       <!-- Navbar between pages -->  
         <nav id="topNav">
             <ul>
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="mission.html">Our Mission</a> </li>
-                <li> <a href="about.html">About the Designer</a> </li>
-                <li> <a href="glossary.html">Glossary</a> </li>
+                <li> <a href="index.html" class="active">Home</a> </li>
+                <li> <a href="mission.html" class="split">Our Mission</a> </li>
+                <li> <a href="about.html" class="split">About the Designer</a> </li>
+                <li> <a href="glossary.html" class="split">Glossary</a> </li>
             </ul>
         </nav>
     </body>
