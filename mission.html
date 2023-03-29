@@ -12,8 +12,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Insert Your Name Here">
         <title>About the Creator</title>
-        <link rel="stylesheet" href="style.css">
     </head>
+    <style>
+        #topNav {
+            background: dimgray;
+            box-shadow: 0px 1px 10px 10px lightgray;
+            height: auto;
+            text-align: center;
+            width: 100%;
+        }
+        #topNav li {
+            display: inline;
+        }
+        #topNav a {
+            color: white;
+            display: inline-block;
+            height: 60px;
+            line-height: 60px;
+            margin: 0px;
+            padding: 0px 15px;
+            text-decoration: none;
+            transition: color 0.3s ease-in;  /*  property | time | method  */
+        }
+        #topNav a:hover {
+            color: lime;
+        }       
+        
     <body>
       <!-- Navbar between pages -->  
         <nav id="topNav">
