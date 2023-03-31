@@ -29,7 +29,7 @@
         }
 
         #topNav a:hover {
-            color: black;
+            color: white;
         }
 
         #topNav a.active {
@@ -40,7 +40,7 @@
         #topNav a.split {
             line-height: 30px;
             float: right;
-            color: black;
+            color: white;
         }
         
  
