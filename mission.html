@@ -16,20 +16,7 @@
         
         <style>
         
-<!-- 
-    {from Mr. S.} your style may not be displaying properly because it is not inside the <head> tag as the browser expects
-    See here: https://www.w3schools.com/tags/tag_style.asp
-    A quick fix would be to move it into your head section.  An even better fix would be to move it into a separate file with
-    just the CSS and no HTML called "style.css" as shown here: https://www.w3schools.com/css/css_howto.asp
-    The big advantage then is you can write one set of code for style information and then just reference it on all your different 
-    HTML pages instead of having to go and make changes in a bunch of different places.  One warning about using an external stylesheet
-    while you are still developing the code is that (because stylesheets change less frequently than HTML content sometimes your browser
-    won't go and fetch the stylesheet on every visit and instead just use the one it loaded last time.  If you made changes and they're not
-    showing up that could be happening.  To resolve, do a "hard refresh" for your browser.  CTRL + Click refresh for Chrome on PC
-    OPT + CMD + E for Safari on Mac.  Google hard refresh + your browser for anything else.
--->
-    
-   <!-- Basic styles -->  
+
         #topNav {
             background-color: #111111;
             height: auto;
@@ -39,7 +26,7 @@
         #topNav li {
             display: inline;
         }
-   <!-- Link styles -->  
+
         #topNav a {
             display: inline-bl;
             color: #f2f2f2;
@@ -52,23 +39,23 @@
             padding: 16px 17px;
             text-decoration: none;
         }
-  <!-- Hover styles -->  
+
         #topNav a:hover {
             color: #111111;
         }
-  <!-- Active styles (the page you're on) -->  
+
         #topNav a.active {
             background-color: #04AA6D;
             color: #FFFFFF;
         }
-  <!-- Split style -->  
+ 
         #topNav a.split {
             float: right;
             background-color: #04AA6D;
             color: #FFFFFF;
         }
         
-  <!-- Responsive link -->  
+ 
         #topNav a.icon {
         display: none;
         }
