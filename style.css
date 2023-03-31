@@ -6,7 +6,7 @@
   <!-- Navagation bar style -->      
 
         #topNav {
-            background-color: #111111;
+            background-color: black;
             height: auto;
             text-align: left;
             width: 100%;
@@ -29,18 +29,18 @@
         }
 
         #topNav a:hover {
-            color: #111111;
+            color: black;
         }
 
         #topNav a.active {
             background-color: #04AA6D;
-            color: #FFFFFF;
+            color: white;
         }
  
         #topNav a.split {
             line-height: 30px;
             float: right;
-            color: #FFFFFF;
+            color: black;
         }
         
  
