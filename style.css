@@ -29,11 +29,6 @@
         #topNav a:hover {
             color: white;
         }
-
-        #topNav a.active {
-            background-color: #04AA6D;
-            color: white;
-        }
  
         #topNav a.split {
             height: 50px;
