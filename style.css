@@ -1,8 +1,9 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-        }      
+        }     
 
+   .myTopnav{
         #topNav {
             background-color: black;
             height: 90px;
@@ -56,3 +57,4 @@
                 text-align: left;
             }
         }
+}
