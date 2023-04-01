@@ -15,7 +15,7 @@ Everyone make a bio!
     
     <body>
 
-        <nav id="topNav">
+        <nav class="myTopnav" id="topNav">
             <link rel="stylesheet" href="style.css">
           <ul>
             <li> <a href="index.html"><img src="FadedMemoriesLogo.png"></a> </li>
@@ -34,10 +34,10 @@ Everyone make a bio!
     <script>
         function myFunction() {
         var x = document.getElementById("topNav");
-            if (x.className === "topNav") {
+            if (x.className === "myTopnav") {
                 x.className += " responsive";
             } else {
-                x.className = "topNav";
+                x.className = "myTopnav";
             }
         }
     </script>
