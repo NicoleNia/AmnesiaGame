@@ -1,6 +1,9 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
+               
+        .header {
+            font-family: Cabin Sketch, Miltonian, display;
         }     
 
         #topNav {
