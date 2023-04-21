@@ -35,8 +35,8 @@
             color: white;
         }
         #topNav a.split {
-            height: 50px;
-            line-height: 25px;
+            height: 25px;
+            line-height: 10px;
             background-color: white;
             float: right;
             color: black;
