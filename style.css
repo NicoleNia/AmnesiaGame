@@ -1,17 +1,17 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Oswald, Helvetica, sans-serif;
+            font-family: Din Neuzeit Grotesk, Oswald, sans-serif;
             color: white;
 }
                
         .headerbg {
-            font-size: 60px;
+            font-size: 80px;
             font-family: Oswald, Helvetica, sans-serif;
             text-align: center;
 }                    
         .subbg {
-            font-size: 40px;
+            font-size: 30px;
             font-family: Futura Light, Nunito, sans-serif;
             text-align: center;
 }     
