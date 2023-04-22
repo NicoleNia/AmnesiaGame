@@ -9,6 +9,11 @@
             font-size: 60px;
             font-family: Syne Mono, Cutive Mono, monospace;
             text-align: center;
+}                    
+        .subbg {
+            font-size: 40px;
+            font-family: Syne Mono, Cutive Mono, monospace;
+            text-align: center;
 }     
 
         #topNav {
