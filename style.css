@@ -7,7 +7,7 @@
                
         .headerbg {
             font-size: 80px;
-            font-family: Oswald, Helvetica, sans-serif;
+            font-family: headerFont, Helvetica, sans-serif;
             text-align: center;
 }                    
         .subbg {
