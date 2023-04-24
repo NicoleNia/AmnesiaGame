@@ -34,7 +34,7 @@
             color: black;
             height: 50px;
             line-height: 25px;
-            margin-right: 50px;
+            margin-right: 80px;
             padding: 16px 20px;
             text-decoration: none;
         }
@@ -43,6 +43,7 @@
         }
         #topNav a.split {
             text-align: left;
+            margin-left: 50px;
         }
 }
 
