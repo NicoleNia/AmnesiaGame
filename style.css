@@ -7,12 +7,12 @@
                
         .headerbg {
             font-size: 80px;
-            font-family: headerFont, New Times Roman, serif;
+            font-family: 'Roboto Condensed', sans-serif;
             text-align: center;
 }                    
         .subbg {
             font-size: 20px;
-            font-family: Futura Light, Nunito, sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
             text-align: center;
 }     
 
