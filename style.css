@@ -45,6 +45,9 @@
             text-align: left;
             margin-left: 50px;
         }
+        #topNav a.logo {
+            font-family: 'Roboto Condensed', sans-serif;
+            color: #354751;
 }
 
         .activenav {
