@@ -46,11 +46,13 @@
         }
         #topNav a.split {
             text-align: left;
+            padding-right: 25px;
         }
         #topNav a.logo {
             font-family: 'Josefin Sans', sans-serif;
             font-size: 22px;
             color: #354751;
+            margin-left: 5px;
 }
 
         .activenav {
