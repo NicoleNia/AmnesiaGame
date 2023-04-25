@@ -36,7 +36,7 @@
             height: 50px;
             line-height: 25px;
             margin-right: 50px;
-            padding: 16px 20px;
+            padding: 16px 15px;
             text-decoration: none;
         }
         #topNav a:hover {
@@ -44,7 +44,7 @@
         }
         #topNav a.split {
             text-align: left;
-            margin-left: 10px;
+            margin-left: 5px;
         }
         #topNav a.logo {
             font-family: 'Josefin Sans', sans-serif;
@@ -55,6 +55,4 @@
         .activenav {
            background-color: #717171;
 }
-
-
 
