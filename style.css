@@ -36,7 +36,7 @@
             font-size: 15px;
             color: black;
             height: 50px;
-            line-height: 5px;
+            vertical-align: middle;
             margin-right: 60px;
             padding-right: 10px;
             text-decoration: none;
