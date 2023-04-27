@@ -17,6 +17,11 @@
             color: black;
 
 }
+        p {
+            font-family: 'Playfair Display', serif;
+            font-size: 15;
+            color: black;
+}
                
         .headerbg {
             font-size: 120px;
