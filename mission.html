@@ -37,9 +37,18 @@
           </ul>
         </nav>
         
-        <div id="image"><img src="R.png"></div>
+        <div id="image"><img src="R.png"></div> 
+        # {from Mr. S.: There's no image file called exactly R.png at the same level of your folders as this file, so the image is not found/displayed.  
+        # Try the same relative link you used elsewhere: "images/R_Bio.jpg" images/ for the folder then insted of "R_Bio.jpg" whatever image file you actually want
         
-        <div style="30px 50px 50px 0px;">
+        <div style="30px 50px 50px 0px;"> 
+            # it's bettter practice to avoide in line style like this (which mixes HTML and CSS) and instead create a class or ID in your CSS with defined style there
+            
+            # if you're trying to size this box, this looks like incomplete CSS, check these guides: 
+            # https://www.w3schools.com/css/css_dimension.asp  and  https://www.w3schools.com/css/css3_box-sizing.asp
+            
+            # note your browser may by default load an old out-of-date "style.css" file that misses any new changes you might've made.  
+            # try googling "hard refresh" plus whatever browser and operating system you're using for the keystroke or click needed to force your browser to fetch the latest css file
             <h2>Hello</h2>
             <p>WHY WON'T YOU WORRRRKKKKK</p>
         </div>
