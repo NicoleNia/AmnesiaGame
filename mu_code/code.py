@@ -1,5 +1,6 @@
 # Write your code here :-)
 # Write your code here :-)
+# Write your code here :-)
 from adafruit_circuitplayground import cp
 import time
 
@@ -35,8 +36,18 @@ def turn_off_all_leds(OFF):
         cp.pixels[pixel_num] = OFF
         
 def level_1_seq():
-    for cp.pixels[pixel_num] = RED
-    
+    for pixel_num in range(0, 4):
+        cp.pixels[pixel_num] = RED
+        time.sleep(0.2)
+        pixel_num in range(2, 6):
+        cp.pixels[pixel_num] = BLUE
+        time.sleep(0.2)
+        pixel_num in range(5, 9):
+        cp.pixels[pixel_num] = GREEN
+        time.sleep(0.2)
+        pixel_num in range(7, 10):
+        cp.pixels[pixel_num] = YELLOW
+        time.sleep(0.2)
     
 while True:
     if cp.button_a:
