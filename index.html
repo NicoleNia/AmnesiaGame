@@ -23,13 +23,14 @@
 }
             * {box-sizing: border-box}
                body {margin:0}
-               .mySlides {display: none}
+               .mySlides {background-color: blue;}
                img {vertical-align: middle;}
 
             .slideshow-container {
-                max-width: 1000px;
+                max-width: 5000px;
                 position: relative;
                 margin: auto;
+                background-color: blue;
             }
 
             .prev, .next {
@@ -54,19 +55,11 @@
             .text {
                 color: #f2f2f2;
                 font-size: 15px;
-                padding: 50px 200px;
+                padding: 100px 200px;
                 position: absolute;
                 bottom: 8px;
                 width: 100%;
                 text-align: right;
-            }
-
-            .numbertext {
-                color: #f2f2f2;
-                font-size: 12px;
-                padding: 8px 12px;
-                position: absolute;
-                top: 0;
             }
 
             .dot {
@@ -135,7 +128,7 @@
         <div class="slideshow-container">
             
             <div class="mySlides">
-                <img src="images/Lake.jpg" alt="Lake" style="width:100%">
+                <br><br><br><br><br><br><br><br><br><br><br>
                 <div class="text">
                     <h3> Discover the story of an amnesiac </h3>
                     <p> This is the story of [blank]. [Babina] works as a security guard stuck with decoding important documents. <br> Unfortunately, her memory loss suddenly goes throughout the night. <br> You’ll help her, won’t you? </p>
@@ -143,7 +136,7 @@
             </div>
 
             <div class="mySlides">
-                <img src="images/sky.jpg" alt="sky" style="width:100%">
+                <br><br><br><br><br><br><br><br><br><br><br>
                 <div class="text">
                     <h3> Learn about memory loss </h3>
                     <p> Blah blah blah blah blah blah blah </p>
@@ -151,7 +144,7 @@
             </div>
             
             <div class="mySlides">
-                <img src="images/Dry.jpg" alt="Dry" style="width:100%">
+                <br><br><br><br><br><br><br><br><br><br><br>
                 <div class="text">
                     <h3> [This is blank] </h3>
                     <p> [Some kind of information goes here] </p>
@@ -168,12 +161,13 @@
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
-       </div>
-                
-       <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+                 
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <br><br><br>
        </div>
         
        <p><br><br><br><br><br><br></p>
