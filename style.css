@@ -1,3 +1,5 @@
+        
+<!-- Website Style and Dimensions -->
         body {
             margin: 0;
             padding: 0;
@@ -66,6 +68,8 @@
             padding: 15px 20px
 }     
 
+<!-- Navigation Bar Info -->
+        <!-- Main -->
         #topNav {
             background-color: white;
             height: 50px;
@@ -77,6 +81,11 @@
         #topNav li {
             display: inline;
         }
+        #topNav a.activenav {
+           background-color: #717171;
+}
+
+        <!-- Link Style -->
         #topNav a {
             display: inline-bl;
             color: #f2f2f2;
@@ -92,20 +101,16 @@
         #topNav a:hover {
             color: white;
         }
+
+        <!-- Logo Style -->
         #topNav a.split {
             text-align: left;
             padding-right: 50px;
-            margin-left: 5px;
-        }
-        #topNav a.logo {
             font-family: 'Oswald', sans-serif;
             font-size: 22px;
             color: #354751;
             margin-left: 5px;
-}
+        }
 
-        .activenav {
-           background-color: #717171;
-}
 
 
