@@ -1,5 +1,5 @@
         
-<!-- website style and dimensions -->
+/* Website Style and Dimensions */
         body {
             margin: 0;
             padding: 0;
@@ -68,8 +68,8 @@
             padding: 15px 20px
 }     
 
-<!-- navigation bar info -->
-        <!-- main -->
+/* Navigation Bar Info */
+        /* Main */
         #topNav {
             background-color: white;
             height: 50px;
@@ -85,7 +85,7 @@
            background-color: #717171;
 }
 
-        <!-- link style -->
+        /* Link Style */
         #topNav a {
             display: inline-bl;
             color: #f2f2f2;
@@ -102,7 +102,7 @@
             color: white;
         }
 
-        <!-- logo style -->
+        /* Logo Style */
         #topNav a.split {
             text-align: left;
             padding-right: 50px;
