@@ -1,7 +1,5 @@
 # Write your code here :-)
 # Write your code here :-)
-# Write your code here :-)
-# Write your code here :-)
 from adafruit_circuitplayground import cp
 import time
 
@@ -38,16 +36,11 @@ def turn_off_leds(color, start, stop):
         cp.pixels[pixel_num] = OFF
 
 
-def turn_off_all_leds(color, start, stop):
-    for pixel_num in range:
-        cp.pixels[pixel_num] = OFF
-
-
 def gradual_light_up(color, start, stop):
     cp.pixels.fill(OFF)
     for pixel_num in range(start, stop):
         cp.pixels[pixel_num] = color
-        time.sleep(1)
+        time.sleep(5)
 
 
 def level_1_seq():
@@ -56,13 +49,27 @@ def level_1_seq():
         print("Touched pad A1")
         cp.pixels.fill(OFF)
 
+    gradual_light_up(GREEN, 5, 9)
+    if cp.touch_A3:
+        print("Touched pad A3")
+        cp.pixels.fill(OFF)
+    gradual_light_up(BLUE, 2, 6)
+    if cp.touch_A4:
+        print("Touched pad A4")
+        cp.pixels.fill(OFF)
+
+    gradual_light_up(YELLOW, 7, 10)
+    if cp.touch_A6:
+        print("Touched pad A6")
+        cp.pixels.fill(OFF)
+
 
 while True:
     if cp.button_a:
         print("Button A pressed!")
         turn_on_leds((RED, BLUE, GREEN, YELLOW))
         time.sleep(1.0)
-        turn_off_all_leds(OFF)
+        cp.pixels.fill(OFF)
 
     if cp.button_b:
         print("Button B pressed!")
@@ -72,12 +79,12 @@ while True:
         turn_off_leds(RED, 0, 4)
     if cp.touch_A2:
         print("Touched pad A2")
-
+        turn_off_leds(BLUE, 2, 6)
     if cp.touch_A3:
         print("Touched pad A3")
-
+        turn_off_leds(GREEN, 5, 9)
     if cp.touch_A6:
         print("Touched pad A6")
-        turn_on_leds(YELLOW)
+        turn_off_leds(YELLOW, 7, 10)
     if cp.touch_A7:
         print("Touched pad A7")
