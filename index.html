@@ -22,7 +22,10 @@
                 width: 100%;
 }
             * {box-sizing: border-box}
-               body {margin:0}
+               body {
+                   margin:0;
+                   height:30px;
+               }
                .mySlides {background-color: #0A151C;}
                img {vertical-align: middle;}
 
@@ -96,6 +99,7 @@
             }
             .overlay {
                 position:absolute;
+                z-index:1;
                 text-align: center;
             }
                
@@ -121,10 +125,7 @@
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
         
-        <p><br></p>
-        
-        <div class="slideshow-container">
-            
+        <div class="slideshow-container">   
             <div class="mySlides">
                 <br><br>
                 <div class="text">
