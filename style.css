@@ -83,7 +83,7 @@
             display: inline;
         }
         #topNav a.activenav {
-           background-color: #717171;
+           background-color: #A5A9D3;
 }
 
         /* Link Style */
@@ -100,7 +100,7 @@
             text-decoration: none;
         }
         #topNav a:hover {
-            color: #917151;
+            color: #A5A9D3;
         }
 
         /* Logo Style */
