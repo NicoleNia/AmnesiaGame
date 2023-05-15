@@ -79,8 +79,15 @@
             font-size: 20px;
             font-family: 'Josefin Sans', sans-serif;
             text-align: center;
-            padding: 15px 20px
+            padding: 15px 20px;
 }     
+        .subbgw {
+            font-size: 20px;
+            font-family: 'Josefin Sans', sans-serif;
+            text-align: center;
+            color: white;
+            padding: 15px 20px;
+} 
 
 /* Navigation Bar Info */
         /* Main */
