@@ -71,7 +71,7 @@
 /* Navigation Bar Info */
         /* Main */
         #topNav {
-            background-color: white;
+            background-color: #917151;
             height: 50px;
             text-align: center;
             width: 100%;
@@ -100,7 +100,7 @@
             text-decoration: none;
         }
         #topNav a:hover {
-            color: white;
+            color: #917151;
         }
 
         /* Logo Style */
