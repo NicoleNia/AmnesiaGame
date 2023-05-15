@@ -1,0 +1,17 @@
+from tkinter import *
+
+def_click();
+print ("You clicked the button!")
+    
+window = Tk()
+button = Button(window,
+    text="Lvl 1",
+    command=click,
+    font=("Oswald",30),
+    fg="00FFOO"
+    bg="black",
+    activeforeground="00FFOO",
+    activebackground="black"
+    state=ACTIVE)
+button.pack
+window.mainloop()
