@@ -35,7 +35,7 @@
             padding: 5px 5px;
 }
         .sub {
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Jost', sans-serif;
             font-size: 30px;
             text-align: center;
             color: black;
@@ -43,14 +43,14 @@
 
 }
         .subw {
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Jost', sans-serif;
             font-size: 30px;
             text-align: center;
             color: white;
             padding: 5px 5px;
 }
         .sublb {
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Jost', sans-serif;
             font-size: 30px;
             text-align: center;
             color: #A5A9D3;
@@ -68,8 +68,8 @@
             text-align: center;
             color: white;
 }
-        .pjsw {
-            font-family: 'Josefin Sans', serif;
+        .pjw {
+            font-family: 'Jost', sans-serif;
             font-size: 20;
             text-align: center;
             color: white;
@@ -90,13 +90,13 @@
 }           
         .subbg {
             font-size: 20px;
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Jost', sans-serif;
             text-align: center;
             padding: 15px 20px;
 }     
         .subbgw {
             font-size: 20px;
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Jost', sans-serif;
             text-align: center;
             color: white;
             padding: 15px 20px;
