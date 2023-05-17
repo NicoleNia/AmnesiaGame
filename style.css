@@ -80,6 +80,13 @@
             font-family: 'Oswald', sans-serif;
             text-align: center;
             padding-down: 10px;
+}       
+        .headerbgw {
+            font-size: 120px;
+            font-family: 'Oswald', sans-serif;
+            text-align: center;
+            padding-down: 10px;
+            color: white;
 }         
         .headerbglb {
             font-size: 120px;
