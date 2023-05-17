@@ -177,4 +177,32 @@
           .sidebar a {font-size: 18px;}
         }
 
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+}
+.video-wrapper {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container { position:relative; }
+.container video {
+    position:relative;
+    z-index:0;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
 
