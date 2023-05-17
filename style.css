@@ -198,7 +198,7 @@
         }
         /* Container */
         .container {position:relative;}
-        .container video {
+        .container img {
            position:relative;
            z-index:0;
         }
