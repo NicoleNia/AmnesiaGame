@@ -186,16 +186,22 @@
 
 /* Container Video */
         /* Video Style */
-        .img-wrapper {
-           width: 85%;
-           height: 500px;
-           position: relative;
-           overflow: hidden;
-           text-align: center;
-           display: flex;
-           align-items: center;
-           justify-content: center;
+        video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width:100%;
         }
+        .video-wrapper {
+          width: 85%;
+          height: 100%;
+          position: relative;
+          overflow: hidden;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+}
         /* Container */
         .container {position:relative;}
         .container img {
