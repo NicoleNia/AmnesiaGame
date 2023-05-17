@@ -186,13 +186,7 @@
 
 /* Container Video */
         /* Video Style */
-        video {
-           position: absolute;
-           top: 0;
-           left: 0;
-           width:100%;
-        }
-        .video-wrapper {
+        .img-wrapper {
            width: 85%;
            height: 500px;
            position: relative;
