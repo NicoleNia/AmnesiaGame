@@ -184,7 +184,7 @@ video {
   width:100%;
 }
 .video-wrapper {
-  width: 100%;
+  width: 80%;
   height: 500px;
   position: relative;
   overflow: hidden;
