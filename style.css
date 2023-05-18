@@ -152,7 +152,7 @@
 
 /* Logo Sidebar Style */
         .sidebar {
-            height: 1000px;
+            height: 100%;
             width: 70px;
             position: fixed;
             z-index: 1;
@@ -188,8 +188,8 @@
           width: 100%;
         }
         .video-wrapper {
-          width: 90%;
-          height: auto;
+          width: 88%;
+          height: 1500px;
           position: relative;
           overflow: hidden;
           display: flex;
