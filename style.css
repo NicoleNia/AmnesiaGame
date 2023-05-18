@@ -39,22 +39,18 @@
             font-size: 30px;
             text-align: center;
             color: black;
-            padding: 5px 5px;
-
 }
         .subw {
             font-family: 'Jost', sans-serif;
             font-size: 30px;
             text-align: center;
             color: white;
-            padding: 5px 5px;
 }
         .sublb {
             font-family: 'Jost', sans-serif;
             font-size: 30px;
             text-align: center;
             color: #A5A9D3;
-            padding: 5px 5px;
 }
         p {
             font-family: 'Playfair Display', serif;
