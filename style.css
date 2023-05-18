@@ -152,7 +152,7 @@
 
 /* Logo Sidebar Style */
         .sidebar {
-            height: 100%;
+            height: 1000px;
             width: 70px;
             position: fixed;
             z-index: 1;
