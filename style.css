@@ -189,7 +189,7 @@
         }
         .video-wrapper {
           width: 88%;
-          height: 1500px;
+          height: 100%;
           position: relative;
           overflow: hidden;
           display: flex;
