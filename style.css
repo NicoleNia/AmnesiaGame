@@ -215,7 +215,7 @@
 }
 
   /*Typewriter*/
-        .typewriter h1 {
+        .typewriter {
           overflow: hidden;
           white-space: nowrap;
           margin: 0 auto;
@@ -225,7 +225,7 @@
             blink-caret .75s step-end infinite;
 }
 
-        /* The typing effect */
+        /* Typing effect */
         @keyframes typing {
           from { width: 0 }
           to { width: 100% }
