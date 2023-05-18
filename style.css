@@ -103,6 +103,11 @@
             text-align: center;
             color: white;
 } 
+         .cardbg {
+            background-color: black;
+            padding: 20px;
+            width: 100%;
+}
 
 /* Navigation Bar Info */
         /* Main */
