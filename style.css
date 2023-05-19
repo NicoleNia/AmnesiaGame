@@ -122,6 +122,9 @@
             clear: both;
             display: table;
 }
+         .mcolumn {
+            float: left;
+}
 
 /* Navigation Bar Info */
         /* Main */
