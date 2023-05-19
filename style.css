@@ -125,6 +125,10 @@
          .mcolumn {
             float: right;
 }
+        .boverlay {
+          position:absolute;
+          z-index:1;
+}
 
 /* Navigation Bar Info */
         /* Main */
