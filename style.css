@@ -136,6 +136,7 @@
 
         .flex-child {
             flex: 1;
+            flex-basis: 50%;
 }  
         .flex-child:first-child {
             margin-left: 15%;
