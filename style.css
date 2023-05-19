@@ -111,8 +111,9 @@
             width: 100%;
 }
          .cardhf {
-            background-color: grey;
-            width: 55%;
+            background-color: #0A151C;
+            margin-top: 100px;
+            padding-bottom: 200px;
 }
          .column {
             float: left;
