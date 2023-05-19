@@ -133,6 +133,7 @@
             padding-top: 10px;
             margin-right: 60px;
             padding-bottom: 80px;
+            position: fixed;
         }
         #topNav li {
             display: inline;
