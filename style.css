@@ -129,6 +129,16 @@
           z-index:1;
 }
 
+/*Yadi Yadi*/
+        .flex-container {
+            display: flex;
+}
+
+        .flex-child {
+            flex: 1;
+            border: 2px solid yellow;
+}  
+
 /* Navigation Bar Info */
         /* Main */
         #topNav {
