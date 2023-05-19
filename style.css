@@ -126,7 +126,6 @@
             float: right;
 }
         .boverlay {
-          position:absolute;
           z-index:1;
 }
 
