@@ -139,9 +139,7 @@
 }  
         .flex-child:first-child {
             margin-left: 20%;
-} 
-        .first {
-          flex-basis: 150px;
+            flex-basis: 150px;
 }
 
 /* Navigation Bar Info */
