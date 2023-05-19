@@ -130,15 +130,11 @@
 }
 
 /*Yadi Yadi*/
-        .flex-container {
-            display: flex;
-}
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;}
 
-        .flex-child {
-            flex: 1;
-            flex-basis: 50%;
-}  
-        .flex-child:first-child {
+        .grid-child:first-child {
             margin-left: 15%;
             margin-right: 0%;
             padding-right: 12%;
