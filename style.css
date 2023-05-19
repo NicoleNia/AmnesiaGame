@@ -140,6 +140,7 @@
         .flex-child:first-child {
             margin-left: 15%;
             margin-right: 0%;
+            padding-right: 5%;
 }
 
 /* Navigation Bar Info */
