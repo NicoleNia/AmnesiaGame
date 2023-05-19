@@ -140,6 +140,9 @@
         .flex-child:first-child {
             margin-left: 20%;
 } 
+        .first {
+          flex-basis: 350px;
+}
 
 /* Navigation Bar Info */
         /* Main */
