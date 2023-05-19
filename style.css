@@ -10,7 +10,7 @@
             font-family: 'Oswald', sans-serif;
             font-size: 50px;
             text-align: center;
-            color: black;
+            color: #0A151C; /*Black*/
             padding: 5px 5px;
 }
         .h3w {
@@ -37,12 +37,12 @@
         .sub {
             font-family: 'Jost', sans-serif;
             text-align: center;
-            color: black;
+            color: #0A151C; /*Black*/
 }
         .subos {
             font-family: 'Oswald', sans-serif;
             text-align: center;
-            color: black;
+            color: #0A151C; 
 }
         .subw {
             font-family: 'Jost', sans-serif;
@@ -57,12 +57,13 @@
         p {
             font-family: 'Playfair Display', serif;
             text-align: center;
-            color: black;
-            line-height: 1.5;}
+            color: #0A151C;
+            line-height: 1.5;
+}
         .pw {
             font-family: 'Playfair Display', serif;
             text-align: center;
-            color: white;
+            color: #0A151C;
 }
         .pjw {
             font-family: 'Jost', sans-serif;
@@ -104,7 +105,7 @@
             color: white;
 } 
          .cardbg {
-            background-color: black;
+            background-color: #0A151C;
             padding: 20px;
             width: 100%;
 }
