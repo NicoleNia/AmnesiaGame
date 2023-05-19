@@ -137,9 +137,6 @@
         .flex-child {
             flex: 1;
 }  
-        .flex-child:first-child {
-            margin-right: 20px;
-} 
 
 /* Navigation Bar Info */
         /* Main */
