@@ -132,13 +132,7 @@
 /*Yadi Yadi*/
         .grid-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;}
-
-        .grid-child:first-child {
-            margin-left: 15%;
-            margin-right: 0%;
-            padding-right: 12%;
-            width: 50px;
+            grid-template-columns: 1fr 1fr;
 }
 
 /* Navigation Bar Info */
