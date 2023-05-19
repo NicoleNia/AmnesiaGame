@@ -105,7 +105,8 @@
 }
          .cardhf {
             background-color: grey;
-            width: 60%;
+            width: 55%;
+            padding-right: 35%;
 }
 
 /* Navigation Bar Info */
