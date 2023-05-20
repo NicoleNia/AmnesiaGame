@@ -125,16 +125,20 @@
             z-index:2;
 }
 
-/*Home Page Image Links*/
+
+
+
+                                                              /*index.html*/
+/*Image Links*/
          .column {
             float: left;
             width: 50%;
-}
+        }
          .row::after {
             content: "";
             clear: both;
             display: table;
-}
+        }
         .centered {
             position: absolute;
             top: 50%;
@@ -142,10 +146,84 @@
             transform: translate(-50%, -50%);
 }
 
-/*Yadi Yadi*/
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1.10fr 0.90fr;
+/*Pop-up Screen*/
+   /* Main */
+        .modal {
+            position: fixed; 
+            z-index: 10; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: #0b141a;
+            padding-top: 50px;
+            transition: background-color 2s ease-in;
+}
+
+  /* Content */
+        .modal-content {
+            background-color: #f5f5f5;
+            margin: 5% auto 15% auto; /*centered*/
+            border: 1px solid #888;
+            width: 80%; 
+}
+   /*Buttons*/
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        button:hover {
+            opacity: 1;
+}
+        @media screen and (max-width: 300px) { /* Change styles for cancel button and delete button on extra small screens */
+            .cancelbtn, .playbtn {
+                  width: 100%;
+            }
+        }
+        .cancelbtn, .playbtn {
+            float: left;
+            width: 50%;
+        }
+        .cancelbtn {
+            background-color: #ccc;
+            color: black;
+        }
+        .playbtn {
+            background-color: #354751;
+}
+        .close {
+            position: absolute;
+            right: 35px;
+            top: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            color: #f5f5f5;
+        }
+        .close:hover,
+        .close:focus {
+            color: #354751;
+            cursor: pointer;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+}
+        .fadein {animation:opac 2s}
+            @keyframes 
+                 opac {
+              	      from{opacity:0} to{opacity:1}
+}
+        .pucontainer {
+            padding: 16px;
+            text-align: center;
 }
 
 /* Navigation Bar Info */
@@ -221,60 +299,69 @@
         }
 
         @media screen and (max-height: 450px) {
-           .sidebar {padding-top: 15px;}
-           .sidebar a {font-size: 18px;}
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
         }
 
 /* Container Video */
         /* Video Style */
         video {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
         .video-wrapper {
-          width: 88%;
-          height: 100%;
-          position: relative;
-          overflow: hidden;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+            width: 88%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 }
         /* Container */
         .container {position:relative;}
         .container video {
-          position:relative;
-          z-index:0;
+            position:relative;
+            z-index:0;
         }
         .overlay {
-          position:absolute;
-          top:0;
-          left:50;
-          z-index:3;
+            position:absolute;
+            top:0;
+            left:50;
+            z-index:3;
 }
 
         .center {
-           margin-left: auto;
-           margin-right: auto;
+             margin-left: auto;
+             margin-right: auto;
 }
 
   /*Typewriter*/
         .typewriter {
-          overflow: hidden;
-          white-space: nowrap;
-          margin: 0 auto;
-          letter-spacing: .15em;
-          animation: 
-            typing 3.5s steps(40, end),
-            blink-caret .75s step-end infinite;
+            overflow: hidden;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .15em;
+            animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
 }
 
         /* Typing effect */
         @keyframes typing {
-          from { width: 0 }
-          to { width: 100% }
+            from { width: 0 }
+            to { width: 100% }
+}
+
+
+
+                                                            /*mission.html*/
+/*Yadi Yadi*/
+        .grid-container {
+            display: grid;
+                grid-template-columns: 1.10fr 0.90fr;
 }
                 
