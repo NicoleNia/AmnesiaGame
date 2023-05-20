@@ -178,7 +178,7 @@
             height: 50px;
             vertical-align: middle;
             margin-right: 60px;
-            padding-right: 10px;
+            padding-right: 8px;
             text-decoration: none;
         }
         #topNav a:hover {
@@ -188,7 +188,7 @@
         /* Logo Style */
         #topNav a.split {
             text-align: left;
-            padding-right: 80px;
+            padding-right: 75px;
             font-family: 'Oswald', sans-serif;
             font-weight: semibold;
             font-size: 30px;
