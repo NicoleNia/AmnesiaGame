@@ -167,6 +167,7 @@
             margin: 5% auto 15% auto; /*centered*/
             border: 1px solid #888;
             width: 80%; 
+            font-family: 'Oswald', sans-serif;
 }
    /*Buttons*/
         button {
@@ -178,6 +179,7 @@
             cursor: pointer;
             width: 100%;
             opacity: 0.9;
+            font-family: 'Playfair Display', serif;
         }
         button:hover {
             opacity: 1;
