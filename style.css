@@ -181,6 +181,7 @@
             width: 100%;
             opacity: 0.9;
             font-family: 'Playfair Display', serif;
+            font-size: 15px;
         }
         button:hover {
             opacity: 1;
