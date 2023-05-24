@@ -3,7 +3,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Playfair Display', serif;
+            font-family: 'Playfair', serif;
             color: white;
 }
         h3 {
@@ -28,7 +28,7 @@
             padding: 5px 5px;
 }
         .h3pdlb {
-            font-family: 'Playfair Display', sans-serif;
+            font-family: 'Playfair', sans-serif;
             font-size: 50px;
             text-align: center;
             color: #A5A9D3;
@@ -56,13 +56,13 @@
             color: #A5A9D3;
 }
         p {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Playfair', serif;
             text-align: center;
             color: #0A151C;
             line-height: 1.5;
 }
         .pw {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Playfair', serif;
             text-align: center;
             color: #0A151C;
 }
