@@ -430,7 +430,6 @@
         .gallery {
            box-shadow: 0 4px 8px 0 rgba(10,21,28,.5);
            transition: 0.3s;
-           padding: 25px;
            float: left;
            width: 400px;
            margin: auto;
