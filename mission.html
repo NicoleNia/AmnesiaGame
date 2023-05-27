@@ -11,8 +11,38 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200&family=Oswald:wght@200;300;400;500&family=Playfair:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <style>
 
+            .paraimg-1, .paraimg-2, .paraimg-3 {
+              position: relative;
+              opacity: 100%;
+              background-attachment: fixed;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+}
+            
+            .paraimg-1 {
+              background-image: url("images/mind.jpg");
+              min-height: 400px;
+            }
+
+            .paraimg-2 {
+              background-image: url("images/puzzle.jpg");
+              min-height: 400px;
+            }
+
+            .paraimg-3 {
+              background-image: url("img_parallax3.jpg");
+              min-height: 400px;
+}
+            @media only screen and (max-device-width: 1024px) {
+              .paraimg-1, .paraimg-2, .paraimg-3 {
+                    background-attachment: scroll;
+              } /* Turns off the scrolling for tablets and phones */
+}
+            
         </style>
     </head>
     <body>
@@ -43,7 +73,7 @@
                     <br>Following Babina, our main character and point-of-view, players experince the reality of retrograde amnesia; however, there are several types of amnesia, all different and unique. So, how do we tell each apart?</p>
                 <br><br><br><br><br><br>
             </div>
-            <div class="flex-child"><img src="images/Lake.jpg" alt="Lake" style="height:100%; width:100%;"></div>
+            <div class="flex-child paraimg-1"></div>
         </div>
                 
         <div class="grid-container" id="TheFacts">
@@ -67,7 +97,7 @@
                    </ul>
                 <br><br><br><br><br><br>
             </div>
-            <div class="flex-child"><img src="images/Lake.jpg" alt="Lake" style="height:100%; width:100%;"></div>
+            <div class="flex-child paraimg-2"></div>
         </div>
 
                 
