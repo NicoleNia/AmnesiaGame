@@ -452,4 +452,49 @@
             left: 50%;
             transform: translate(-50%, -50%);
 }
+
+
+
+                                                        /* Footer */
+        .cardf {
+            background-color: #0A151C;
+            width: 100%;
+            z-index: 0;
+            padding-left: 25px;
+            padding-right: 35px;
+}
+        .fsidebar {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: 5;
+            padding-top: 20px;
+            overflow-x: hidden;
+        }
+        .fsidebar a {
+            padding: 10px 8px 10px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #FFFFFF;
+            display: block;
+        }
+        @media screen and (max-height: 450px) {
+            .sidebar {padding-top: 15px;}
+            .sidebar a {font-size: 18px;}
+}
+        
+        .vlink {
+            height: 100%;
+            width: 100%;
+            padding-top: 20px;
+            position: absolute;
+            padding-left: 50px;
+        }
+
+        .vlink a {
+            color: white;
+            display: block;
+            padding: 6px;
+            text-decoration: none;
+}
                 
