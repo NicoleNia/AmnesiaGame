@@ -419,7 +419,7 @@
 /*Yadi Yadi*/
         .grid-container {
             display: grid;
-                grid-template-columns: 1.10fr 0.90fr;
+            grid-template-columns: 1.10fr 0.90fr;
 }
 
 
