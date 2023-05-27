@@ -456,13 +456,16 @@
 
 
                                                         /* Footer */
+        footer {
+            padding-left: 50px;
+            padding-right: 65px;
+}
         .cardf {
             background-color: #0A151C;
             width: 100%;
             z-index: 0;
-            padding-left: 25px;
-            padding-right: 35px;
 }
+                
         .fsidebar {
             height: 100%;
             width: 100%;
