@@ -470,7 +470,12 @@
             z-index: 0;
             color: white;
 }
-                
+        #footer button {
+            margin-left: 35px;
+            font-size: 20px; 
+            background-color: #A5A9D3;
+            font-family: 'Playfair', serif;
+}        
         .fsidebar {
             width: 50px;
             position: absolute;
