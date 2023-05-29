@@ -476,6 +476,8 @@
             font-family: 'Playfair', serif;
             border: 2px solid #8487a8;
             cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
 }        
         .fsidebar {
             width: 50px;
