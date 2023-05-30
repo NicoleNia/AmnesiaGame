@@ -1,0 +1,31 @@
+# Write your code here :-)
+# Write your code here :-)
+import usb_hid
+from adafruit_circuitplayground.express import cpx
+from adafruit_hid.keyboard import Keyboard
+from adafruit_hid.keycode import Keycode
+from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
+
+kbd = Keyboard(usb_hid.devices)
+layout = KeyboardLayoutUS(kbd)
+while True:
+    if cpx.touch_A1:
+       kbd.send(Keycode.A) 
+        while cpx.touch_A1:
+            pass
+    if cpx.touch_A2:
+       kbd.send(Keycode.S) 
+        while cpx.touch_A2:
+            pass
+    if cpx.touch_A3:
+        kbd.send(Keycode.D) 
+        while cpx.touch_A3:
+            pass
+    if cpx.touch_A6:
+        kbd.send(Keycode.Z) 
+        while cpx.touch_A6:
+            pass
+    if cpx.touch_A7:
+        kbd.send(Keycode.X) 
+        while cpx.touch_A7:
+            pass
