@@ -7,8 +7,9 @@ HEIGHT = 800
 WIDTH = 1300
 state = "start"
 gui_font = pygame.font.Font(None, 30)
-
-
+score = 0
+def update():
+    if keyboard.A:
 def draw():
     screen.blit("background.jpg", (0, 0))
 
@@ -30,4 +31,5 @@ def draw():
             ocolor="black",
             fontsize=20,
         )
-       
+        
+
