@@ -1,5 +1,3 @@
-# Write your code here :-)
-# Write your code here :-)
 from adafruit_circuitplayground import cp
 import time
 import usb_hid
@@ -11,7 +9,6 @@ kbd = Keyboard(usb_hid.devices)
 layout = KeyboardLayoutUS(kbd)
 cp.adjust_touch_threshold(200)
 cp.pixels.brightness = 0.3
-cp.pixels[0] = 0x00FF00
 
 RED = (255, 0, 0)
 BLUE = (0, 0, 255)
@@ -21,7 +18,7 @@ OFF = (0, 0, 0)
 score = 0
 
 
-def turn_on_leds(color):
+def turn_on_leds():
     for pixel_num in range(0, 4):
         cp.pixels[pixel_num] = RED
         time.sleep(0.2)
@@ -32,14 +29,9 @@ def turn_on_leds(color):
     for pixel_num in range(5, 9):
         cp.pixels[pixel_num] = GREEN
         time.sleep(0.2)
-    for pixel_num in range(7, 10):
+    for pixel_num in range(7, 9):
         cp.pixels[pixel_num] = YELLOW
         time.sleep(0.2)
-
-
-def turn_off_leds(color, start, stop):
-    for pixel_num in range:
-        cp.pixels[pixel_num] = OFF
 
 
 def gradual_light_up(color, start, stop):
@@ -51,10 +43,10 @@ def gradual_light_up(color, start, stop):
 
 def level_1_seq():
     gradual_light_up(RED, 0, 3)
-    if cp.touch_A1:
+    if cp.touch_A2:
         print("Touched pad A1")
         cp.pixels.fill(OFF)
-        while cp.touch_A1:
+        while cp.touch_A2:
             pass
 
     gradual_light_up(GREEN, 5, 9)
@@ -64,17 +56,17 @@ def level_1_seq():
         while cp.touch_A3:
             pass
     gradual_light_up(BLUE, 2, 6)
-    if cp.touch_A4:
+    if cp.touch_A6:
         print("Touched pad A4")
         cp.pixels.fill(OFF)
-        while cp.touch_A4:
+        while cp.touch_A6:
             pass
 
     gradual_light_up(YELLOW, 7, 10)
-    if cp.touch_A6:
+    if cp.touch_A7:
         print("Touched pad A6")
         cp.pixels.fill(OFF)
-        while cp.touch_A6:
+        while cp.touch_A7:
             pass
 
 
@@ -94,36 +86,30 @@ while True:
         while cp.button_b:
             pass
 
-    if cp.touch_A1:
-        print("Touched pad A1")
-        kbd.send(Keycode.A)
-        turn_off_leds(RED, 0, 4)
-        while cp.touch_A1:
-            pass
-
     if cp.touch_A2:
         print("Touched pad A2")
         kbd.send(Keycode.S)
-        turn_off_leds(BLUE, 2, 6)
+        cp.pixels.fill(OFF)
         while cp.touch_A2:
             pass
 
     if cp.touch_A3:
         print("Touched pad A3")
         kbd.send(Keycode.D)
-        turn_off_leds(GREEN, 5, 9)
+        cp.pixels.fill(OFF)
         while cp.touch_A3:
             pass
 
     if cp.touch_A6:
         print("Touched pad A6")
         kbd.send(Keycode.Z)
-        turn_off_leds(YELLOW, 7, 10)
+        cp.pixels.fill(OFF)
         while cp.touch_A6:
             pass
 
     if cp.touch_A7:
         print("Touched pad A7")
         kbd.send(Keycode.X)
+        cp.pixels.fill(OFF)
         while cp.touch_A7:
             pass
