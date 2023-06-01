@@ -1,6 +1,7 @@
 # Write your code here :-)
 # Write your code here :-)
 import pygame
+import random
 
 TITLE = "MLA"
 HEIGHT = 800
@@ -8,10 +9,22 @@ WIDTH = 1300
 state = "start"
 gui_font = pygame.font.Font(None, 30)
 score = 0
+mylist = ["apple", "banana", "cherry"]
+
+
 def update():
     if keyboard.A:
+        print("A key")
+        mylist = True
+        while keyboard.A:
+            pass
+
+
 def draw():
-    screen.blit("background.jpg", (0, 0))
+    if mylist == True
+        print(random.choice(mylist))
+    else:
+        screen.blit("background.jpg", (0, 0))
 
     if state == "start":
         screen.draw.text(
@@ -31,5 +44,3 @@ def draw():
             ocolor="black",
             fontsize=20,
         )
-        
-
