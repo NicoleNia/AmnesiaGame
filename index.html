@@ -19,26 +19,53 @@
     <body>
         
 <!-- Pop-up Game -->
-        <div id="id01" class="modal fadein">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close">×</span>
-            <form class="modal-content">
+    <!-- Modal -->
+        <div id="myModal" class="modal fadein">
+        <span class="close">&times;</span>
+            <div class="modal-content">
                 <div class="pucontainer">
-                    <h1 style="font-size: 50px;">You Have 5 Minutes.<br>Don't Forget.</h1>
-      
-                <div style="margin-right:auto; margin-left:auto; font-size:100px;">
-                    <p>TIMER</p>
+                    <h1 style="font-size:10px;">You Have 5 Minutes.<br>Don't Forget.</h1>
+                        <div style="margin-right:auto; margin-left:auto; font-size:15px;">
+                            <p>TIMER</p>
+                        </div>
+                    <p style="font-family:'Jost',sans-serif; font-size: 10px;">How To Play: <br>
+                    *This is a quick description on how to play the game. After, the screen will flash a couple of colors*</p>
+
+                    <div class="clearfix" style="padding-right: 100px; padding-left: 100px;">
+                        <button id="close" onclick="document.getElementById('myModal').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button onclick="startGame();" id="play" class="playbtn">Play the Game</button>
+                    </div>
                 </div>
-      
-                    <p style="font-family:'Jost',sans-serif; font-size: 30px;">How To Play: <br>
-                        *This is a quick description on how to play the game. After, the screen will flash a couple of colors*</p>
-      
-                <div class="clearfix" style="padding-right: 100px; padding-left: 100px;">
-                    <button type="button" onclick="document.getElementById('close').style.display='none'" class="cancelbtn">Cancel</button>
-                    <button type="button" onclick="document.getElementById('close').style.display='none"; document.getElementById('play').style.display='display'" class="playbtn">Play the Game</button>
-                </div>
-                </div>
-            </form>
-        </div>
+            </div>
+        </div>  
+  
+<!-- Simon Says Game (Demo) -->
+    <main class="game" id="pop-up">
+        <header>
+            <h1 class="heading js-heading">Simon Game</h1>
+            <span class="close">&times;</span>
+        </header>
+        
+        <section class="tile-container js-container unclickable">
+            <div class="tile tile-red" data-tile="red"></div>
+            <div class="tile tile-green" data-tile="green"></div>
+            <div class="tile tile-blue" data-tile="blue"></div>
+            <div class="tile tile-yellow" data-tile="yellow"></div>
+        </section>
+
+        <footer class="info-section">
+            <button class="start-button js-start">Start</button>
+            <span class="info js-info hidden"></span>
+        </footer>
+    </main>
+
+    <div class="hidden">
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" data-sound="red"></audio>
+        <audio src="start-13691" data-sound="green"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" data-sound="blue"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" data-sound="yellow"></audio>
+    </div>
+
 
 <!-- Icon Sidebar -->
         <div class="sidebar">
