@@ -144,12 +144,6 @@
   box-sizing: inherit;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  font-family: 'Jost', sans-serif;
-}
-
 .game {
   display: none;
   position: absolute;
