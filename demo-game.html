@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Nia Antoine" content="Amnesia Game">
+        <title>Faded Memories ┃ Official Site</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200&family=Oswald:wght@200;300;400;500&family=Playfair:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <head>
+    
+<!-- Simon Says Game (Demo) -->
+    <main class="game modal-content" id="pop-up">
+        <header>
+            <h1 class="heading js-heading">Simon Game</h1>
+            <span class="close">&times;</span>
+        </header>
+        
+        <section class="tile-container js-container unclickable">
+            <div class="tile tile-red" data-tile="red"></div>
+            <div class="tile tile-green" data-tile="green"></div>
+            <div class="tile tile-blue" data-tile="blue"></div>
+            <div class="tile tile-yellow" data-tile="yellow"></div>
+        </section>
+
+        <footer class="info-section">
+            <button class="start-button js-start">Start</button>
+            <span class="info js-info hidden"></span>
+        </footer>
+    </main>
+
+    <div class="hidden">
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" data-sound="red"></audio>
+        <audio src="start-13691" data-sound="green"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" data-sound="blue"></audio>
+        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" data-sound="yellow"></audio>
+    </div>
+
+<style>
+                                                                
+// Pop-Up Game
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+var btn = document.getElementById("play");
+
+var game = document.getElementById("pop-up");
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  game.style.display = "block";
+  modal.style.display = "none";
+}
+
+
+// Keeps track of sequence
+let sequence = [];
+let humanSequence = [];
+let level = 0;
+
+const startButton = document.querySelector('.js-start');
+const info = document.querySelector('.js-info');
+const heading = document.querySelector('.js-heading');
+const tileContainer = document.querySelector('.js-container');
+
+function resetGame(text) {
+  alert(text);
+  sequence = [];
+  humanSequence = [];
+  level = 0;
+  startButton.classList.remove('hidden');
+  heading.textContent = 'Simon Game';
+  info.classList.add('hidden');
+  tileContainer.classList.add('unclickable');
+}
+
+// Players turn
+function humanTurn(level) {
+  tileContainer.classList.remove('unclickable');
+  info.textContent = `Your turn! Relay the Sequence.`;
+}
+
+// How the game detects the correct Player sequence
+function activateTile(color) {
+  const tile = document.querySelector(`[data-tile='${color}']`);
+  const sound = document.querySelector(`[data-sound='${color}']`);
+
+  tile.classList.add('activated');
+  sound.play();
+
+  setTimeout(() => {
+    tile.classList.remove('activated');
+  }, 300);
+}
+
+function playRound(nextSequence) {
+  nextSequence.forEach((color, index) => {
+    setTimeout(() => { // A delay between each button press
+      activateTile(color); // Add sound and color from html
+    }, (index + 1) * 600);
+  });
+}
+
+// Randomization of CPU seqeunce presses
+function nextStep() {
+  const tiles = ['red', 'green', 'blue', 'yellow'];
+  const random = tiles[Math.floor(Math.random() * tiles.length)];
+
+  return random;
+}
+
+// All the math involved
+function nextRound() {
+  level += 1;
+
+  // Updates the content before Player goes
+  tileContainer.classList.add('unclickable');
+  info.textContent = 'Initiating Sequence...';
+  heading.textContent = `Level ${level} of 15`;
+
+  // Math Continued
+  const nextSequence = [...sequence];
+  nextSequence.push(nextStep());
+  playRound(nextSequence);
+
+  // Break for Players sequence
+  sequence = [...nextSequence];
+  setTimeout(() => {
+    humanTurn(level);
+  }, level * 600 + 1000);
+}
+
+// Determins how many 'clicks' until the game continues
+function handleClick(tile) {
+  const index = humanSequence.push(tile) - 1;
+  const sound = document.querySelector(`[data-sound='${tile}']`);
+  sound.play();
+
+  const remainingTaps = sequence.length - humanSequence.length;
+
+  // Message for incorrect sequence
+  if (humanSequence[index] !== sequence[index]) {
+    resetGame('GAME OVER. Play again?');
+    return;
+  }
+
+  // When you finish the game 
+  if (humanSequence.length === sequence.length) {
+    if (humanSequence.length === 15) {
+      resetGame('Congrats! You completed all the levels');
+      return
+    }
+
+    humanSequence = [];
+    setTimeout(() => {
+      nextRound();
+    }, 1000);
+    return;
+  }
+}
+
+// When the 'Start' button is clicked
+function startGame() {
+  modal.style.display = "none";
+  startButton.classList.add('hidden');
+  info.classList.remove('hidden');
+  info.textContent = 'Intiating Sequence...';
+  nextRound();
+}
+
+startButton.addEventListener('click', startGame);
+/* Detecting whether to continue to next round or not ('listening' to player input) */
+tileContainer.addEventListener('click', event => {
+  const {
+    tile
+  } = event.target.dataset;
+
+  if (tile) handleClick(tile);
+});
+
+</style>
