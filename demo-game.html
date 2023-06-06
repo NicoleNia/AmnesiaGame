@@ -230,7 +230,6 @@ header {
 
 
 <style>
-                                                                
 // Keeps track of sequence
 let sequence = [];
 let humanSequence = [];
@@ -255,7 +254,7 @@ function resetGame(text) {
 // Players turn
 function humanTurn(level) {
   tileContainer.classList.remove('unclickable');
-  info.textContent = `Your turn! Relay the Sequence`;
+  info.textContent = `Your turn! Relay the Sequence.`;
 }
 
 // How the game detects the correct Player sequence
@@ -291,17 +290,17 @@ function nextStep() {
 function nextRound() {
   level += 1;
 
-// Updates the content before Player goes
+  // Updates the content before Player goes
   tileContainer.classList.add('unclickable');
   info.textContent = 'Initiating Sequence...';
-  heading.textContent = `Level ${level} of 20`;
+  heading.textContent = `Level ${level} of 15`;
 
-// Math Continued
+  // Math Continued
   const nextSequence = [...sequence];
   nextSequence.push(nextStep());
   playRound(nextSequence);
 
-// Break for Players sequence
+  // Break for Players sequence
   sequence = [...nextSequence];
   setTimeout(() => {
     humanTurn(level);
@@ -316,21 +315,20 @@ function handleClick(tile) {
 
   const remainingTaps = sequence.length - humanSequence.length;
 
-// Message for incorrect sequence
+  // Message for incorrect sequence
   if (humanSequence[index] !== sequence[index]) {
     resetGame('GAME OVER. Play again?');
     return;
   }
 
-// When you finish the game 
+  // When you finish the game 
   if (humanSequence.length === sequence.length) {
-    if (humanSequence.length === 20) {
+    if (humanSequence.length === 15) {
       resetGame('Congrats! You completed all the levels');
       return
     }
 
     humanSequence = [];
-    info.textContent = 'Success! Keep going!';
     setTimeout(() => {
       nextRound();
     }, 1000);
@@ -349,7 +347,9 @@ function startGame() {
 startButton.addEventListener('click', startGame);
 /* Detecting whether to continue to next round or not ('listening' to player input) */
 tileContainer.addEventListener('click', event => {
-  const { tile } = event.target.dataset;
+  const {
+    tile
+  } = event.target.dataset;
 
   if (tile) handleClick(tile);
 });
