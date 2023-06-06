@@ -14,50 +14,34 @@
     <head>
     
 <!-- Simon Says Game (Demo) -->
-    <main class="game modal-content" id="pop-up">
-        <header>
-            <h1 class="heading js-heading">Simon Game</h1>
-            <span class="close">&times;</span>
-        </header>
-        
-        <section class="tile-container js-container unclickable">
-            <div class="tile tile-red" data-tile="red"></div>
-            <div class="tile tile-green" data-tile="green"></div>
-            <div class="tile tile-blue" data-tile="blue"></div>
-            <div class="tile tile-yellow" data-tile="yellow"></div>
-        </section>
+<main class="game">
+  <header>
+    <h1 class="heading js-heading">Simon Game</h1>
+  </header>
 
-        <footer class="info-section">
-            <button class="start-button js-start">Start</button>
-            <span class="info js-info hidden"></span>
-        </footer>
-    </main>
+  <section class="tile-container js-container unclickable">
+    <div class="tile tile-red" data-tile="red"></div>
+    <div class="tile tile-green" data-tile="green"></div>
+    <div class="tile tile-blue" data-tile="blue"></div>
+    <div class="tile tile-yellow" data-tile="yellow"></div>
+  </section>
 
-    <div class="hidden">
-        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" data-sound="red"></audio>
-        <audio src="start-13691" data-sound="green"></audio>
-        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" data-sound="blue"></audio>
-        <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" data-sound="yellow"></audio>
-    </div>
+  <footer class="info-section">
+    <button class="start-button js-start">Start</button>
+    <span class="info js-info hidden"></span>
+  </footer>
+</main>
+
+<div class="hidden">
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" data-sound="red"></audio>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" data-sound="green"></audio>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" data-sound="blue"></audio>
+  <audio src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" data-sound="yellow"></audio>
+</div>
+
 
 <style>
                                                                 
-// Pop-Up Game
-var modal = document.getElementById("myModal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-var btn = document.getElementById("play");
-
-var game = document.getElementById("pop-up");
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
 // Keeps track of sequence
 let sequence = [];
 let humanSequence = [];
@@ -82,7 +66,7 @@ function resetGame(text) {
 // Players turn
 function humanTurn(level) {
   tileContainer.classList.remove('unclickable');
-  info.textContent = `Your turn! Relay the Sequence.`;
+  info.textContent = `Your turn! Relay the Sequence`;
 }
 
 // How the game detects the correct Player sequence
@@ -118,17 +102,17 @@ function nextStep() {
 function nextRound() {
   level += 1;
 
-  // Updates the content before Player goes
+// Updates the content before Player goes
   tileContainer.classList.add('unclickable');
   info.textContent = 'Initiating Sequence...';
-  heading.textContent = `Level ${level} of 15`;
+  heading.textContent = `Level ${level} of 20`;
 
-  // Math Continued
+// Math Continued
   const nextSequence = [...sequence];
   nextSequence.push(nextStep());
   playRound(nextSequence);
 
-  // Break for Players sequence
+// Break for Players sequence
   sequence = [...nextSequence];
   setTimeout(() => {
     humanTurn(level);
@@ -143,20 +127,21 @@ function handleClick(tile) {
 
   const remainingTaps = sequence.length - humanSequence.length;
 
-  // Message for incorrect sequence
+// Message for incorrect sequence
   if (humanSequence[index] !== sequence[index]) {
     resetGame('GAME OVER. Play again?');
     return;
   }
 
-  // When you finish the game 
+// When you finish the game 
   if (humanSequence.length === sequence.length) {
-    if (humanSequence.length === 15) {
+    if (humanSequence.length === 20) {
       resetGame('Congrats! You completed all the levels');
       return
     }
 
     humanSequence = [];
+    info.textContent = 'Success! Keep going!';
     setTimeout(() => {
       nextRound();
     }, 1000);
@@ -166,7 +151,6 @@ function handleClick(tile) {
 
 // When the 'Start' button is clicked
 function startGame() {
-  modal.style.display = "none";
   startButton.classList.add('hidden');
   info.classList.remove('hidden');
   info.textContent = 'Intiating Sequence...';
@@ -176,9 +160,7 @@ function startGame() {
 startButton.addEventListener('click', startGame);
 /* Detecting whether to continue to next round or not ('listening' to player input) */
 tileContainer.addEventListener('click', event => {
-  const {
-    tile
-  } = event.target.dataset;
+  const { tile } = event.target.dataset;
 
   if (tile) handleClick(tile);
 });
