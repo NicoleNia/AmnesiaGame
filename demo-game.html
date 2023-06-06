@@ -252,7 +252,7 @@ function resetGame(text) {
 // Players turn
 function humanTurn(level) {
   tileContainer.classList.remove('unclickable');
-  info.textContent = `Your turn! Relay the Sequence.`;
+  info.textContent = "Your turn! Relay the Sequence.";
 }
 
 // How the game detects the correct Player sequence
@@ -338,12 +338,12 @@ function handleClick(tile) {
 function startGame() {
   startButton.classList.add('hidden');
   info.classList.remove('hidden');
-  info.textContent = 'Intiating Sequence...';
+  info.textContent = "Intiating Sequence...";
   nextRound();
 }
 
 startButton.addEventListener('click', startGame);
-/* Detecting whether to continue to next round or not ('listening' to player input) */
+/ Detecting whether to continue to next round or not ('listening' to player input) /
 tileContainer.addEventListener('click', event => {
   const {
     tile
