@@ -9,7 +9,7 @@ WIDTH = 1300
 state = "start"
 gui_font = pygame.font.Font(None, 30)
 score = 0
-mylist = ["red background image reg.jpg", "yellow screen tree background.jpg", "blue screen tree background.jpg","","x screen tree background.jpg"]
+mylist = ["red background image reg.jpg", "yellow screen tree background.jpg", "blue screen tree background.jpg","green screen tree background.jpg",]
 
 
 def update():
@@ -24,7 +24,7 @@ def draw():
     if mylist == True
         print(random.choice(mylist))
     else:
-        screen.blit("background.jpg", (0, 0))
+        screen.blit("x screen tree background.jpg", (0, 0))
 
     if state == "start":
         screen.draw.text(
