@@ -2,6 +2,7 @@
 # Write your code here :-)
 import pygame
 import random
+import time
 
 TITLE = "MLA"
 HEIGHT = 800
@@ -9,24 +10,22 @@ WIDTH = 1300
 state = "start"
 gui_font = pygame.font.Font(None, 30)
 score = 0
-mylist = ["red background image reg.jpg", "yellow screen tree background.jpg", "blue screen tree background.jpg","green screen tree background.jpg",]
+mylist = ["red_back.jpg", "yellow_screen.jpg", "blue_screen.jpg," "green_screen.jpg"]
+mylist_flag = False
 
 
 def update():
+    global mylist_flag
     if keyboard.A:
         print("A key")
-        mylist = True
+        mylist_flag = True
         while keyboard.A:
             pass
 
 
 def draw():
-    if mylist == True
-        print(random.choice(mylist))
-    else:
-        screen.blit("x screen tree background.jpg", (0, 0))
-
     if state == "start":
+        screen.draw: " x_screen.jpg"
         screen.draw.text(
             "FADED MEMORIES",
             color="white",
@@ -44,3 +43,7 @@ def draw():
             ocolor="black",
             fontsize=20,
         )
+
+    if mylist_flag:
+        print(random.choice(mylist))
+        time.sleep(2)
