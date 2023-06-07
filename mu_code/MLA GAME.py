@@ -9,7 +9,7 @@ WIDTH = 1300
 state = "start"
 gui_font = pygame.font.Font(None, 30)
 score = 0
-mylist = ["apple", "banana", "cherry"]
+mylist = ["red background image reg.jpg", "yellow screen tree background.jpg", "blue screen tree background.jpg","","x screen tree background.jpg"]
 
 
 def update():
